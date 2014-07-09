@@ -1,0 +1,73 @@
+/**
+ * PgwMenu - Version 1.0
+ *
+ * Copyright 2014, Jonathan M. Piat
+ * http://pgwjs.com - http://pagawa.com
+ *
+ * Released under the GNU GPLv3 license - http://opensource.org/licenses/gpl-3.0
+ */
+.pgwMenu {
+    background: #333;
+    height: 40px;
+    list-style: none;
+    position: relative;
+}
+
+.pgwMenu ul {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+
+.pgwMenu li {
+    display: inline-block;
+    font-size: 0.9rem;
+}
+
+.pgwMenu li a,
+.pgwMenu .pmDropDown a{
+    display: block;
+    color: #fff;
+    line-height: 40px;
+    padding: 0 12px;
+    text-decoration: none;
+}
+
+.pgwMenu li a:hover{
+    background: #666;
+    text-decoration: none;
+}
+
+.pgwMenu ul.mobile {
+    background: none repeat scroll 0 0 #222;
+    box-shadow: 0 4px 6px #777;
+    left: 0;
+    position: absolute;
+    top: 100%;
+    z-index: 1000;
+}
+
+.pgwMenu ul.mobile li {
+    display: block;
+    clear: both;
+    width: 175px;
+}
+
+.pgwMenu .pmDropDown {
+    display: none;
+}
+
+.pgwMenu .pmDropDown a {
+    display: inline-block;
+    background: #c40000;
+}
+
+.pgwMenu .pmDropDown a.active {
+    background: #222;
+}
+
+/*@media (max-width: 480px) {
+    #mnct {
+        display: none;
+    }
+}*/
