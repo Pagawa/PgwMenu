@@ -10,7 +10,8 @@
     $.fn.pgwMenu = function(options) {
     
         var defaults = {
-            dropDownLabel : 'Menu'
+            dropDownLabel : '<span class="icon"></span>',
+            mainClassName : 'pgwMenu'
         };
     
         if (this.length == 0) {
@@ -52,9 +53,16 @@
         };
         
         // Create drop down
-        var createDropDown = function() {
+        var createDropDown = function() {            
+            var wrapClass = pgwMenu.config.mainClassName;
+            var defaultClass = pgwMenu.plugin.attr('class');
+            
+            if (defaultClass && defaultClass.indexOf('light') > -1) {
+                wrapClass += ' light';
+            }
+            
             pgwMenu.plugin.removeClass();
-            pgwMenu.plugin.wrap('<div class="pgwMenu"></div>');
+            pgwMenu.plugin.wrap('<div class="' + wrapClass + '"></div>');
             pgwMenu.plugin = pgwMenu.plugin.parent();
             pgwMenu.plugin.prepend('<div class="pmDropDown"><a href="javascript:void(0)">' + pgwMenu.config.dropDownLabel + '</a></div>');
         };

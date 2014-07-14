@@ -1,0 +1,87 @@
+/**
+ * PgwMenu - Version 1.0
+ *
+ * Copyright 2014, Jonathan M. Piat
+ * http://pgwjs.com - http://pagawa.com
+ *
+ * Released under the GNU GPLv3 license - http://opensource.org/licenses/gpl-3.0
+ */
+.pgwMenu {
+    background: #f1941c;
+    height: 40px;
+    position: relative;
+    list-style: none;
+}
+
+.pgwMenu ul {
+    list-style: none;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+}
+
+.pgwMenu ul.mobile {
+    background: #f1941c;
+    box-shadow: 2px 2px 4px #777;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: 1000;
+}
+
+.pgwMenu ul.mobile li {
+    display: block;
+    clear: both;
+    width: 175px;
+}
+
+.pgwMenu li {
+    float: left;
+    font-size: 0.9rem;
+}
+
+.pgwMenu a{
+    display: block;
+    color: #fff;
+    line-height: 40px;
+    padding: 0 12px;
+    text-decoration: none;
+}
+
+.pgwMenu a.selected {
+    background: #e5601d;
+}
+
+.pgwMenu li a:hover{
+    background: #e86f2e;
+}
+
+.pgwMenu .pmDropDown {
+    display: none;
+}
+
+.pgwMenu .pmDropDown a {
+    display: inline-block;
+    background: #e86F2e;
+}
+
+.pgwMenu .pmDropDown a.active {
+    background: #e5601d;
+}
+
+.pgwMenu .pmDropDown span.icon,
+.pgwMenu .pmDropDown span.black {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOvgAADr4B6kKxwAAAABZ0RVh0U29mdHdhcmUAcGFpbnQubmV0IDQuMDvo9WkAAABpSURBVEhL7ZPLCcAwDEM9jefI/ks1Hyj2QbiGSLcKHggl8sEktjTc/WGyZxo6YKAbrFzFoav3/hdhmsrlijBN5XJFmKZyuSJMU7lcsfV/kIN0FRJgyACGDGDIAIYMpK8CHt6iG6xZhY0JIJ+6AHGbUFsAAAAASUVORK5CYII=) no-repeat;
+    display: block;
+    height: 22px;
+    width: 22px;
+    margin: 9px 5px;
+}
+
+.pgwMenu .pmDropDown span.white {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwQAADsEBuJFr7QAAABZ0RVh0U29mdHdhcmUAcGFpbnQubmV0IDQuMDvo9WkAAABKSURBVEhL7ZOxDQAwCMN6O4/T0tmjsxHJDB4yROJ0dz3s1BRHEi2OTREBpQFKA5QGKA3m7IP8RKeIgNIApQFKA5QGc/ZBfkJTdF0oUafLBAFNbAAAAABJRU5ErkJggg==) no-repeat;
+    display: block;
+    height: 22px;
+    width: 22px;
+    margin: 9px 5px;
+}
