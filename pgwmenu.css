@@ -70,6 +70,7 @@
 
 .pgwMenu li a:hover{
     background: #666;
+    text-decoration: none;
 }
 
 .pgwMenu.light li a:hover{

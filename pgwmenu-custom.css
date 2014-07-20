@@ -54,6 +54,7 @@
 
 .pgwMenu li a:hover{
     background: #e86f2e;
+    text-decoration: none;
 }
 
 .pgwMenu .pmDropDown {
