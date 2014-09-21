@@ -1,7 +1,7 @@
 PgwMenu
 ========
 
-The full documentation and an example are available on [PgwJS.com](http://pgwjs.com/pgwmenu/).
+The full documentation and an example are available on [**PgwJS.com**/PgwMenu](http://pgwjs.com/pgwmenu/).
 
 
 Requirements
@@ -22,4 +22,5 @@ All issues or pull requests must be submitted through GitHub.
 ChangeLog
 ---------
 
+* 2014-09-21 - Added "ViewMore" option (Version 2.0)
 * 2014-07-14 - First commit (Version 1.0)
