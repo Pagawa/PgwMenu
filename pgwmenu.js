@@ -92,14 +92,14 @@
             var pluginMaxWidth = pgwMenu.plugin.width();
 
             if (pgwMenu.config.viewMoreEnabled) {
-                var viewMoreLinkWidth = pgwMenu.plugin.find('.pm-viewMore').width();
+                var viewMoreLinkWidth = pgwMenu.plugin.find('.pm-viewMore').outerWidth(true);
             }
 
             function getContentWidth() {
                 var menuContentWidth = 0;
                 pgwMenu.plugin.find('.pm-links').removeClass('mobile').show();
                 pgwMenu.plugin.find('.pm-links > li').each(function() {
-                    menuContentWidth += $(this).width();
+                    menuContentWidth += $(this).outerWidth(true);
                 });
                 return menuContentWidth;
             }
@@ -111,8 +111,8 @@
                     pgwMenu.plugin.find('.pm-links').removeClass('mobile').show();
                     pgwMenu.plugin.find('.pm-viewMore > ul > li').remove();
                     pgwMenu.plugin.find('.pm-links > li').show().each(function() {
-                        if (viewMoreMenuWidth + $(this).width() < pluginMaxWidth) {
-                            viewMoreMenuWidth += $(this).width();
+                        if (viewMoreMenuWidth + $(this).outerWidth(true) < pluginMaxWidth) {
+                            viewMoreMenuWidth += $(this).outerWidth(true);
                         } else {
                             pgwMenu.plugin.find('.pm-viewMore > ul').append($(this).clone().show());
                             $(this).hide();
