@@ -2,7 +2,7 @@
   "name": "pgwmenu",
   "title": "PgwMenu",
   "description": "Responsive menu plugin for jQuery / Zepto",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "main": "pgwmenu.js",
   "homepage": "https://pgwjs.com/pgwmenu",
   "author": "Jonathan M. Piat",
